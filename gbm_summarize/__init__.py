@@ -165,9 +165,5 @@ def __main__():
     else:
         print("Sorry please enter a valid gene symbol!")
 
-
-
-
-
 if __name__ == "__main__":
     main()
