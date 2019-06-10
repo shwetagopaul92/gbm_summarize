@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>gbm_summarize &#8212; gbm_summarize  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="gbm-summarize">
+<h1>gbm_summarize<a class="headerlink" href="#gbm-summarize" title="Permalink to this headline">¶</a></h1>
+<p>I have created a Python command line tool to work with cancer genomic data from the cBio Cancer Genomics Portal, which currently supports a REST-based web API.
+The tool will help retrieve mutation and copy number alteration data for a 1 gene or upto 3 genes (that a user inputs) in Glioblastoma patients.
+I have used argparse to interface with the command line inputs. My tool is called “gbm_summarize”.</p>
+</div>
+<div class="section" id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<p>Once the folder is unzipped, follow the below procedure to install it on your local machine.</p>
+<p>On the command prompt:</p>
+<p>cd gbm_summarize/</p>
+<p>pip3 install -e .</p>
+<p>This would install the tool</p>
+</div>
+<div class="section" id="tutorial">
+<h1>Tutorial<a class="headerlink" href="#tutorial" title="Permalink to this headline">¶</a></h1>
+<p>To use the tool:</p>
+<p>gbm_summarize -h</p>
+<p>gbm_summarize TP53</p>
+<p>This would show summary statistics for mutation, copy number alterations and a total % of cases where TP53 is altered by mutation or copy number.</p>
+<p>gbm_summarize TP53 MDM2 MDM4</p>
+<p>This would show summary statistics for each gene</p>
+<p>gbm_summarize TP53 MDM2 MDM4 MDM2</p>
+<p>This would throw an error, allowing only upto 3 gene inputs for now.</p>
+</div>
+<div class="section" id="future-enhancements">
+<h1>Future enhancements :<a class="headerlink" href="#future-enhancements" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>To allow checking of valid gene symbol inputs.</p></li>
+<li><p>To optimize the program by reducing number of API calls.</p></li>
+</ul>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">gbm_summarize</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Shweta Gopaulakrishnan.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.0.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: gbm-summarize
+Version: 0.1.0
+Summary: Python command line tool to access cBioPortal
+Home-page: UNKNOWN
+Author: Shweta Gopaulakrishnan
+Author-email: reshg@channing.harvard.edu
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: cBioPortal REST client wrapper command line interface
+Platform: UNKNOWN

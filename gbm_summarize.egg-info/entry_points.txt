@@ -1,0 +1,3 @@
+[console_scripts]
+gbm_summarize = gbm_summarize:__main__
+
